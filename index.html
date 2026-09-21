@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--timestamp=1757809450-->
+<!--timestamp=1790025384-->
 
 <head>
   <meta charset="UTF-8">
@@ -12,25 +12,25 @@
           crossorigin="anonymous"></script>
   
   <title>
-    Is OpenBSD 8 Released?
+    Is OpenBSD 8.0 Released?
   </title>
   <link rel="icon" href="https://released.info/assets/img/technologies/openbsd/openbsd.ico" type="image/svg+xml">
-  <meta name="description" content="Is OpenBSD 8 Released?">
-  <meta name="keywords" content="Microsoft, Windows, release, date, when, os, operating, system">
-  <meta name=”robots” content="index, follow">
+  <meta name="description" content="Is OpenBSD 8.0 Released?">
+  <meta name="keywords" content="OpenBSD, release, date, when, os, operating, system">
+  <meta name="robots" content="index, follow">
 
   <!-- facebook -->
   <meta property="og:url" content="https://is.openbsd.released.info" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="Is OpenBSD 8 Released?" />
-  <meta property="og:description" content="There is no information about OpenBSD 8 release! Still waiting! #released.info" />
+  <meta property="og:title" content="Is OpenBSD 8.0 Released?" />
+  <meta property="og:description" content="OpenBSD 8.0 is not released. Still waiting! #released.info" />
   <meta property="og:image" content="https://released.info/assets/img/technologies/openbsd/openbsd-logo.png" />
 
   <!-- twitter -->
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:site" content="ReleasedInfo" />
-  <meta name="twitter:title" content="Is OpenBSD 8 Released?" />
-  <meta name="twitter:description" content="There is no information about OpenBSD 8 release! Still waiting! #released.info" />
+  <meta name="twitter:title" content="Is OpenBSD 8.0 Released?" />
+  <meta name="twitter:description" content="OpenBSD 8.0 is not released. Still waiting! #released.info" />
   <meta name="twitter:image" content="https://released.info/assets/img/technologies/openbsd/openbsd-logo.png" />
 
   <meta name="url" content="https://is.openbsd.released.info" />
@@ -47,7 +47,7 @@
 
 <body>
 
-  <input id="released-days" type="hidden" value="109" />
+  <input id="released-days" type="hidden" value="-1" />
 
   <main role="main">
     <a href="https://released.info/index.html" class="go-back"><i class="bi bi-arrow-left"></i></a>
@@ -72,13 +72,13 @@
           </li>
         </ul>
         <h2>
-          Is OpenBSD 8 Released?
+          Is OpenBSD 8.0 Released?
         </h2>
         <div class="row">
           <div class="col-lg-8">
 
             <div id="logo">
-              <span role="img" aria-label="${configuration.logoAlt}"
+              <span role="img" aria-label="OpenBSD logo"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/openbsd-logo.png&#39;);">
               </span>
             </div>
@@ -87,12 +87,13 @@
 
             
             
-            
+            <!-- A counter that reached zero falls back to "Not Yet" instead of an empty box until the state is updated -->
             <span>
-              <div class="white-box" id="no-information">
-                No information
+              <div class="white-box" id="not-yet">
+                Not Yet
               </div>
             </span>
+            
 
             <!-- END -->
 
@@ -101,12 +102,12 @@
         <div class="row">
           <div class="col-lg-8">
             <h3 id="highlightTextDescription1">
-              The current release is OpenBSD 7.3, released <span class="btn-primary">on 11th April 2023</span>
+              OpenBSD 8.0 is expected <span class="btn-primary">in autumn 2026</span>, -current became 8.0-beta on 16th July 2026 but OpenBSD never announces a date
             </h3>
           </div>
           <div class="col-lg-8">
             <h4 id="highlightTextDescription2">
-              This is the 54th release.
+              The current release is OpenBSD 7.9, released on <span class="btn-primary">19th May 2026</span> as the 60th OpenBSD release
             </h4>
           </div>
         </div>
@@ -122,26 +123,26 @@
     <section class="features-section">
       <div class="container-lg">
         <h2>
-          Meet OpenBSD 8
+          Meet OpenBSD 7.9
         </h2>
         <div class="row mb-5">
           <div class="col-md-5">
 
             <ul>
               <li>
-                Kernel Improvements
+                OpenSSH 10.3
               </li>
             </ul>
 
             <ul>
               <li>
-                Networking Enhancements
+                LibreSSL 4.3.0
               </li>
             </ul>
 
             <ul>
               <li>
-                Security Features
+                rpki-client 9.8
               </li>
             </ul>
 
@@ -149,27 +150,27 @@
           <div class="col-md-5">
             <ul>
               <li>
-                Updated Cryptography Support
+                vmboot: sysupgrade inside vmd virtual machines
               </li>
             </ul>
             <ul>
               <li>
-                New and Updated Userland Tools
+                Parallel page-fault handling on amd64 and arm64
               </li>
             </ul>
             <ul>
               <li>
-                Xenocara and GUI Improvements
+                ice(4) network driver enabled on arm64
               </li>
             </ul>
           </div>
         </div>
         <div class="text-center">
-          <a target="_blank" href="https://www.openbsd.org/" class="btn btn-primary btn-lg">Read more</a>
+          <a target="_blank" href="https://www.openbsd.org/79.html" class="btn btn-primary btn-lg">Read more</a>
         </div>
       </div>
       <div class="logo-container">
-        <span role="img" aria-label="${configuration.logoAlt2}"
+        <span role="img" aria-label="OpenBSD logo"
           style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/openbsd-logo2.png&#39;);">
         </span>
       </div>
@@ -186,7 +187,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Absolute OpenBSD: Unix for the Practical Paranoid"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/book-Absolute-OpenBSD.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Michael-W-Lucas-ebook/dp/B00CH96VB4?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=e3f586dcad46812c857acc1331205279&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -200,7 +201,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: The Book of PF, 3rd Edition: A No-Nonsense Guide to the OpenBSD Firewall"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/book-The-Book-of-PF.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Peter-N-M-Hansteen-ebook/dp/B00O9A7E88?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=e45d7bd0a918ed14d89a35375cf32e75&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -214,7 +215,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Mastering FreeBSD and OpenBSD Security"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/book-Mastering-FreeBSD-and-OpenBSD-Security.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Yanek-Korff-ebook/dp/B00CLX8PK6?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=15ff3d434529418806824f6806d38ebc&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -228,7 +229,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: Secure Architectures with OpenBSD"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/book-Secure-Architectures-with-OpenBSD.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Brandon-Palmer/dp/0321193660?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=0c8401f78113abb9d6d2200ac6f52f4d&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -242,7 +243,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: The OpenBSD 4.0 Crash Course"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/book-The-OpenBSD-Crash-Course.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Jem-Matzan-ebook/dp/B00JV8FZCK?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=aeef823819324e1356f24ab8939f4&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -256,7 +257,7 @@
             <!-- repeat below container for each image: -->
             <div class="col-md-4">
               <!-- <span role="img" aria-label="_IMAGE_ALT_" style="background-image: url('_ITERATOR_IMAGE_SRC_');">-->
-              <span role="img" aria-label="${post.imageAlt}"
+              <span role="img" aria-label="Book: BSD UNIX Toolbox"
                 style="background-image: url(&#39;https://released.info/assets/img/technologies/openbsd/book-BSD-UNIX-Toolbox.jpg&#39;);">
                 <a target="_blank" href="https://www.amazon.de/-/en/Christopher-Negus-ebook/dp/B001B041VC?&amp;_encoding=UTF8&amp;tag=released-info-21&amp;linkCode=ur2&amp;linkId=e403b0958ae1cc68683e37ea19cc9697&amp;camp=1638&amp;creative=6742">
                   <span>
@@ -313,11 +314,9 @@
     and so the few who swear by it often sacrifice being able to download many apps they otherwise might be able to.
     What gives then? We will detail it further in the article, but essentially OpenBSD is arguably the most secure
     operating system there is, and so people setting up servers or protecting highly confidential data may use OpenBSD
-    for their purposes. BSD stands for Berkeley Software Distribution, meaning that the operating system was developed
-    and is maintained by the prestigious institution of UCBerkeley.<br />
+    for their purposes. BSD stands for Berkeley Software Distribution, the Unix lineage the system descends from; OpenBSD itself is an independent volunteer project led by Theo de Raadt since 1995.<br />
     <div id="hidden-about"><br />
-        Security is the absolute priority of OpenBSD, but it is also extremely portable as it can run on over 17
-        hardware platforms.
+        Security is the absolute priority of OpenBSD, but it is also extremely portable as it runs on more than a dozen hardware platforms.
         OpenBSD, similar to FreeBSD, is most commonly used to set up a powerful and nearly impenetrable server,
         which can be set up as a DNS server, but also as extremely secure email servers, as well as many possible
         combinations
@@ -336,9 +335,7 @@
         and it stayed that way until 2007 when another hole was found, ending with the slogan
         “Only two remote holes in the default install, in a heck of a long time!”.<br />
         <h3>Releases</h3>
-        OpenBSD was released originally in July 1996, and we are now in the stable 6.9 release,
-        issued in May of 2021. This project is almost entirely worked on by volunteers,
-        who post updates every 6 months, so an update is definitely due by the end of 2021.
+        OpenBSD was released originally in July 1996, and we are now on the stable 7.9 release, issued on 19th May 2026 as the 60th release. This project is almost entirely worked on by volunteers, who ship a new release roughly every six months, so OpenBSD 8.0 is expected before the end of 2026.
     </div>
 </div>
       </div>
